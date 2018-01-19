@@ -14,8 +14,7 @@ var urlsToCache = [
   'vickan_X-Jobb_interaction_v2.html',
   'vickan_X-Jobb_Loading_icon.html',
   'vickan_X-Jobb_Menu.html',
-  'vickan_X-Jobb_static_view.html',
-  '/'
+  'vickan_X-Jobb_static_view.html'
 ];
 
 self.addEventListener('install', function(event) {
