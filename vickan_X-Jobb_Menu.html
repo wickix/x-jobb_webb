@@ -1,0 +1,52 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="icon" sizes="192x192" href="appIcon192x192.png">
+  <link rel="icon" sizes="128x128" href="appIcon128x128.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="appIcon128x128.png">
+  <link rel="apple-touch-icon-precomposed" sizes="128x128" href="appIcon128x128.png">
+</head>
+
+<body>
+  <ul>
+    <li><a href="vickan_X-Jobb_interaction_v2.html"><button>Interaction</button></a></li>
+    <li><a href="vickan_X-Jobb_Loading_icon.html"><button>Loading icon</button></a></li>
+    <li><a href="vickan_X-Jobb_static_view.html"><button>Static view</button></a></li>
+    <li><a href="vickan_X-Jobb_animations.html"><button>Animations</button></a></li>
+  </ul>
+
+</body>
+<style>
+ul{
+  list-style: none;
+  padding: 0;
+}
+ul > li{
+  padding: 10 0;
+}
+ul button{
+  width: 100%;
+}
+</style>
+
+<script type="text/javascript">
+
+if ('serviceWorker' in navigator) {
+
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+
+}
+</script>
+
+<html>
