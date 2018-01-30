@@ -23,6 +23,6 @@
   }],
 
   "start_url": "vickan_X-Jobb_Menu.html",
-  "display": "browser",
+  "display": "standalone",
   "orientation": "portrait"
 }
