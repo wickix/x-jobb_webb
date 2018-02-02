@@ -43,7 +43,7 @@ self.addEventListener('fetch', function(event) {
 });
 
 
-self.addEventListener('activate', function(event) {
+/*self.addEventListener('activate', function(event) {
 
   var cacheWhitelist = [];
 
@@ -58,4 +58,4 @@ self.addEventListener('activate', function(event) {
       );
     })
   );
-});
+});*/
